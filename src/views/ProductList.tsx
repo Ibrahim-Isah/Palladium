@@ -14,9 +14,23 @@ const ProductList = () => {
   }, [])
   return (
     <div>
-      <h1>Product List Application</h1>
+      <h1
+        style={{
+          fontSize: "28px",
+          fontWeight: "bold",
+          textAlign: "center",
+        }}
+      >
+        Product List Application
+      </h1>
       <div>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "10px",
+          }}
+        >
           {allProducts.length > 0 ? (
             allProducts.map((product) => (
               <ProductCard key={product.id} product={product} />

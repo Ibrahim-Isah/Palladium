@@ -26,9 +26,19 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   }
 
   return (
-    <div onClick={openProductDetails}>
+    <div
+      onClick={openProductDetails}
+      style={{
+        border: "2px solid gray",
+        borderRadius: "20px",
+        padding: "10px",
+        margin: "10px",
+        cursor: "pointer",
+        minWidth: "300px",
+      }}
+    >
       <div>
-        <h1>{product.name}</h1>
+        <h1 style={{ fontSize: "20px", fontWeight: "bold" }}>{product.name}</h1>
         <p>{product.description}</p>
       </div>
     </div>

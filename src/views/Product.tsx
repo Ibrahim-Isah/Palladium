@@ -9,7 +9,15 @@ const Product = () => {
   console.log(product, "here is the product")
   return (
     <div>
-      Product Details Page
+      <h1
+        style={{
+          fontSize: "28px",
+          fontWeight: "bold",
+          textAlign: "center",
+        }}
+      >
+        Product Details Page
+      </h1>
       <div>
         <h1>{product.name}</h1>
         <p>{product.type}</p>
