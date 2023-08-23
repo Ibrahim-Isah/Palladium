@@ -13,7 +13,16 @@ const ProductList = () => {
     setAllProducts(JSON.parse(getProducts))
   }, [])
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "10px",
+        marginBottom: "20px",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <h1
         style={{
           fontSize: "28px",
@@ -23,13 +32,19 @@ const ProductList = () => {
       >
         Product List Application
       </h1>
-      <div>
+      <div
+        style={{
+          margin: "20px auto",
+          alignSelf: "center",
+          justifySelf: "center",
+        }}
+      >
         <div
           style={{
             display: "flex",
             flexWrap: "wrap",
             gap: "10px",
-            marginBottom: "20px",
+            margin: "20px auto",
           }}
         >
           {allProducts.length > 0 ? (

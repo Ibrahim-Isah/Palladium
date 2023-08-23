@@ -15,6 +15,8 @@ const Product = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          marginRight: "20px",
+          marginLeft: "20px",
         }}
       >
         <h1
