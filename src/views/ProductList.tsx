@@ -22,12 +22,10 @@ const ProductList = () => {
               <ProductCard key={product.id} product={product} />
             ))
           ) : (
-            <div>
-              No Product Added
-              <Link to="/new">Add a New Product </Link>
-            </div>
+            <div>No Product Added</div>
           )}
         </div>
+        <Link to="/new">Add a New Product </Link>
       </div>
     </div>
   )

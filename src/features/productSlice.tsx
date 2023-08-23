@@ -29,9 +29,11 @@ const productSlice = createSlice({
     },
     addProduct: (state, action: PayloadAction<Product>) => {
       const getProducts = state.allProducts
+      const newProduct = action.payload
 
-      getProducts.push(action.payload)
-      state.allProducts = getProducts
+      getProducts.push({ ...newProduct })
+      state.allProducts.push({ ...newProduct })
+
       localStorage.setItem("products", JSON.stringify(getProducts))
     },
   },
