@@ -29,6 +29,7 @@ const ProductList = () => {
             display: "flex",
             flexWrap: "wrap",
             gap: "10px",
+            marginBottom: "20px",
           }}
         >
           {allProducts.length > 0 ? (
@@ -36,10 +37,30 @@ const ProductList = () => {
               <ProductCard key={product.id} product={product} />
             ))
           ) : (
-            <div>No Product Added</div>
+            <div
+              style={{
+                marginBottom: "20px",
+              }}
+            >
+              No Product Added
+            </div>
           )}
         </div>
-        <Link to="/new">Add a New Product </Link>
+        <Link
+          to="/new"
+          style={{
+            padding: "10px",
+            backgroundColor: "blue",
+            color: "white",
+            borderRadius: "5px",
+            cursor: "pointer",
+            textAlign: "center",
+            marginTop: "20px",
+            textDecoration: "none",
+          }}
+        >
+          Add a New Product{" "}
+        </Link>
       </div>
     </div>
   )
